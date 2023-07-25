@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- android_large___1 strings -->
+
+    <string name="app_name">Page 1</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="_1_25_string">1:25</string>
+    <string name="_3_15_string">3:15</string>
+    <string name="now_playing_string">Now playing</string>
+    <string name="ffd_string">Playlist "Playlist of the day"</string>
+</resources>

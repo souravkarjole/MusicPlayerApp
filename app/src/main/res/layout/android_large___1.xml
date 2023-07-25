@@ -1,0 +1,207 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#2D2D2D"
+	android:orientation="vertical">
+
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/nav_bar"
+		android:layout_width="match_parent"
+		android:layout_height="65dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/backBtn"
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:layout_marginStart="5dp"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:background="@drawable/back" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Now Playing"
+				android:textColor="#ABABAB"
+				android:textSize="20sp" />
+		</LinearLayout>
+
+
+	</androidx.appcompat.widget.Toolbar>
+
+	<ImageView
+		android:id="@+id/music_1"
+		android:layout_width="200dp"
+		android:layout_height="200dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="100dp"
+		android:src="@drawable/music_1" />
+
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout"
+		android:layout_width="362dp"
+		android:layout_height="120dp"
+		android:layout_marginTop="100dp"
+		android:layout_gravity="center">
+
+		<TextView
+			android:id="@+id/song_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingStart="8dp"
+			android:text="The Weekend"
+			android:ellipsize="marquee"
+			android:singleLine="true"
+			android:textColor="@color/white"
+			android:textSize="25sp"
+			/>
+
+		<SeekBar
+			android:id="@+id/seekBar"
+			android:layout_width="match_parent"
+			android:layout_height="31dp"
+			android:layout_marginTop="70dp" />
+
+		<TextView
+			android:id="@+id/start_duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/seekBar"
+			android:layout_alignParentStart="true"
+			android:gravity="center"
+			android:text="0:00"
+			android:textColor="@color/white" />
+
+		<TextView
+			android:id="@+id/total_duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/seekBar"
+			android:layout_alignParentEnd="true"
+			android:gravity="center"
+			android:text="0:00"
+			android:textColor="@color/white" />
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/play_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="55dp"
+		android:layout_gravity="center">
+
+
+		<RelativeLayout
+			android:id="@+id/group_157"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="131dp">
+
+			<ImageView
+				android:id="@+id/pause_btn"
+				android:layout_width="74dp"
+				android:layout_height="73dp"
+				android:src="@drawable/pause_circle" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+			android:id="@+id/skip_forward_ek1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="240dp"
+			android:layout_marginTop="24dp"
+			android:gravity="center">
+
+			<ImageView
+				android:id="@+id/vector_ek3"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="4dp"
+				android:src="@drawable/vector_ek3" />
+
+			<ImageView
+				android:id="@+id/vector_ek4"
+				android:layout_width="2dp"
+				android:layout_height="14dp"
+				android:layout_marginStart="23dp"
+				android:layout_marginTop="6dp"
+				android:src="@drawable/vector_ek4" />
+
+		</RelativeLayout>
+
+
+
+		<ImageView
+			android:id="@+id/subtract"
+			android:layout_width="24dp"
+			android:layout_height="17.76dp"
+
+			android:layout_marginTop="29dp"
+			android:src="@drawable/subtract" />
+
+
+		<RelativeLayout
+			android:id="@+id/ic_round_download"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="303dp"
+			android:layout_marginTop="26dp">
+
+			<ImageView
+				android:id="@+id/vector_ek5"
+				android:layout_width="15.17dp"
+				android:layout_height="18.17dp"
+				android:layout_marginStart="4dp"
+				android:layout_marginTop="3dp"
+				android:src="@drawable/vector_ek5" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/skip_forward_ek2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="64dp"
+			android:layout_marginTop="24dp"
+			android:gravity="center">
+
+			<ImageView
+				android:id="@+id/vector_ek6"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:layout_marginStart="3dp"
+				android:layout_marginTop="4dp"
+				android:src="@drawable/vector_ek6" />
+
+			<ImageView
+				android:id="@+id/vector_ek7"
+				android:layout_width="2dp"
+				android:layout_height="15dp"
+				android:layout_marginStart="22dp"
+				android:layout_marginTop="6dp"
+				android:src="@drawable/vector_ek7" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+</LinearLayout>
